@@ -1,7 +1,11 @@
 //part 2
+function select() {
+    const singleElem = document.querySelector("#side-nav")
+    return singleElem
+}
 
-const singleElem = document.querySelector("#side-nav")
-console.log(singleElem)
+console.log(select())
+
 
 //part 3
 
@@ -32,4 +36,14 @@ function stuAdd() {
 }
 
 console.log(stuAdd())
+
+//part 4
+
+function changeDarkmode() {
+    const darkMode = document.querySelector(".light-theme")
+    darkMode.classList.replace("light-theme", "dark-theme")
+    return darkMode
+}
+
+changeDarkmode()
 
